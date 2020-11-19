@@ -1,0 +1,160 @@
+/* control / robi się komentarze */
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 15px;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2, .skills-list{
+  font-family: 'Inknut Antiqua', serif;
+}
+
+img {
+  /* this is limiting the with of the imagine, so it takes 100% width of the parent maximum */
+  max-width: 100%;
+}
+
+nav {
+    background-color: #DBEBF4;
+    position: fixed;
+    /* nagłówek zawsze na stronie */
+    z-index: 1;
+    /* z-index mówi o tym, że będzie się znajdował u góry wszystkiego, bo 1 jest większa od 0, a 0 jest na defaultcie */
+    width: 100%;
+  }
+
+  /* przez to, że napisaliśmy nav na początku odnosi się tylko do listy w nawigacji */
+ nav ul li {
+   display: inline-block;
+   margin: 0 15px;
+   /* 0 odnosi się do góry i dołu, a 15 do prawiej i lewej */
+   padding: 0;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-size: 14px;
+ }
+
+ nav ul {
+   margin: 0 auto;
+   text-align: center;
+   padding: 30px;
+ }
+
+ header {
+   top: 70px;
+   position: relative;
+/* zawsze jak mamy top/bottom itp to musimy dać position relative albo absolute */
+    margin-bottom: 220px;
+    background-image: url('../img/background.png');
+    /* ../ oznacza cofnięcie się o jednen folder */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -145px;
+ }
+
+ h1 {
+   font-size: 100px;
+   line-height: 130%;
+ }
+
+ h2 {
+   font-size: 30px;
+   line-height: 130%;
+ }
+
+ h1,h2 {
+   font-weight: normal;
+ }
+
+ p {
+    line-height: 150%;
+ }
+
+ul li {
+  list-style: none;
+  /* nie ma kropki przy liście */
+  margin:  10px 0;
+}
+
+li.empty {
+  width: 90px;
+  border-top: 1px solid black;
+  top: -5px;
+  position: relative;
+}
+
+.button {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  margin-top:40px;
+  display: inline-block;
+  /* żeby można było przesuwać coś w góre i w dól, bo default jest tylko horizontal */
+  border-radius: 20px;
+  transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+  /* przy zmienianiu koloru tła po najechaniu */
+}
+
+.button:hover{
+  background: black;
+  color: white;
+}
+
+figcaption {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li a:hover {
+  text-decoration: underline; 
+}
+
+.intro-img {
+  box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
+  /* tworzenie cienia pod obrazkiem, 000 to kolor czarny 0.2 to przezroczystość */
+  margin-top: 30px;
+}
+
+.skills-list {
+  text-align: center;
+  font-size: 50px;
+  line-height: 150%;
+  margin-bottom: 130px;
+}
+
+.project {
+  margin: 30px 0;
+  padding: 50px;
+}
+
+.blue {
+  background-color: #DBEBF4;
+}
+
+.project .button {
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  margin: 100px 0;
+}
+
+footer h2 {
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+.right-alignment {
+  text-align: right;
+}
