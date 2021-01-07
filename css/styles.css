@@ -1,7 +1,8 @@
 /* control / robi się komentarze */
 body {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 15px;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 body, ul {
@@ -9,13 +10,14 @@ body, ul {
   padding: 0;
 }
 
-h1,h2, .skills-list{
-  font-family: 'Inknut Antiqua', serif;
+h1, h2, h3, .skills-list{
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
 }
 
 img {
   /* this is limiting the with of the imagine, so it takes 100% width of the parent maximum */
-  max-width: 100%;
+  max-width: 105%;
 }
 
 nav {
@@ -30,49 +32,56 @@ nav {
   /* przez to, że napisaliśmy nav na początku odnosi się tylko do listy w nawigacji */
  nav ul li {
    display: inline-block;
-   margin: 0 15px;
+   margin: 0 18px;
    /* 0 odnosi się do góry i dołu, a 15 do prawiej i lewej */
    padding: 0;
    text-transform: uppercase;
    letter-spacing: 1px;
-   font-size: 14px;
+   font-size: 16px;
  }
 
  nav ul {
    margin: 0 auto;
    text-align: center;
-   padding: 30px;
+   padding: 20px;
  }
 
  header {
-   top: 70px;
+   top: 10px;
    position: relative;
 /* zawsze jak mamy top/bottom itp to musimy dać position relative albo absolute */
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     background-image: url('../img/background.png');
     /* ../ oznacza cofnięcie się o jednen folder */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -145px;
+    background-position-y: -190px;
  }
 
  h1 {
-   font-size: 100px;
-   line-height: 130%;
+   padding-top: 20px;
+   margin-bottom: 0px;
+   font-size: 112px;
+   line-height: 100%;
    color: white;
  }
 
  h2 {
+   padding-top: 0px;
+   padding-bottom: 40px;
+   font-size: 35px;
+   line-height: 100%;
+   color: white;
+}
+
+ h3 {
    font-size: 30px;
    line-height: 130%;
  }
 
- h1,h2 {
-   font-weight: normal;
- }
-
  p {
     line-height: 150%;
+    margin: 7spx;
  }
 
 ul li {
@@ -93,7 +102,7 @@ li.empty {
   text-decoration: none;
   color: black;
   padding: 10px 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   display: inline-block;
   /* żeby można było przesuwać coś w góre i w dól, bo default jest tylko horizontal */
   border-radius: 20px;
@@ -107,8 +116,7 @@ li.empty {
 }
 
 figcaption {
-  font-size: 10px;
-  margin-top: 10px;
+  font-size: 12px;
 }
 
 nav li a {
@@ -156,13 +164,13 @@ footer {
   color: #03225a
 }
 
-footer h2 {
+footer h3 {
   font-size: 50px;
   margin-bottom: 100px;
 }
 
-.right-alignment {
-  text-align: right;
+.left-alignment {
+  text-align: left;
 }
 
 nav {
