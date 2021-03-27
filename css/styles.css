@@ -61,7 +61,7 @@ nav {
  h1 {
    padding-top: 60px;
    margin-bottom: 0px;
-   font-size: 80px;
+   font-size: 84px;
    line-height: 100%;
    color: white;
  }
@@ -77,11 +77,12 @@ nav {
  h3 {
    font-size: 30px;
    line-height: 130%;
+   margin-bottom: 20px;
  }
 
  p {
     line-height: 150%;
-    margin: 7spx;
+    margin-bottom: 15px;
  }
 
 ul li {
@@ -162,7 +163,7 @@ nav li a:hover {
 
 footer {
   text-align: center;
-  margin: 100px 0;
+  margin: 150px 0;
   color: #03225a
 }
 
@@ -178,3 +179,21 @@ footer h3 {
 nav {
 color: white;
 }
+
+.sekcja
+{
+ text-align: center;
+ color: black;
+ margin: 0px;
+}
+
+.edukacja
+{
+  margin: 0px;
+ }
+
+.edu2
+   {
+     padding-top: 80px;
+     padding-bottom: 20px;
+   }
